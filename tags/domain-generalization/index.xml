@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Domain Generalization on Xin Luo&#39;s Blog</title>
+    <link>https://luoxin13.github.io/tags/domain-generalization/</link>
+    <description>Recent content in Domain Generalization on Xin Luo&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Apr 2022 11:29:02 +0800</lastBuildDate><atom:link href="https://luoxin13.github.io/tags/domain-generalization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>领域泛化技术整理</title>
+      <link>https://luoxin13.github.io/posts/notes-on-recent-dg-tech/</link>
+      <pubDate>Thu, 07 Apr 2022 11:29:02 +0800</pubDate>
+      
+      <guid>https://luoxin13.github.io/posts/notes-on-recent-dg-tech/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

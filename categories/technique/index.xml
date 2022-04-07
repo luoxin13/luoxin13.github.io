@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technique on Hugo Tania</title>
+    <link>https://example.com/categories/technique/</link>
+    <description>Recent content in Technique on Hugo Tania</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Apr 2022 11:29:02 +0800</lastBuildDate><atom:link href="https://example.com/categories/technique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure Github Blog</title>
+      <link>https://example.com/posts/configure-github-blog/</link>
+      <pubDate>Thu, 07 Apr 2022 11:29:02 +0800</pubDate>
+      
+      <guid>https://example.com/posts/configure-github-blog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

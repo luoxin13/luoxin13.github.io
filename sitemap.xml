@@ -2,22 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://luoxin13.github.io/about/</loc>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/archives/</loc>
+    <loc>https://example.com/posts/configure-github-blog/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/categories/</loc>
+    <loc>https://example.com/tags/github-blog/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/categories/</loc>
+    <loc>https://example.com/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/search/</loc>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/series/</loc>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/tags/</loc>
+    <loc>https://example.com/categories/technique/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/tags/</loc>
+    <loc>https://example.com/tags/%E5%85%83%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
   </url><url>
-    <loc>https://luoxin13.github.io/</loc>
+    <loc>https://example.com/posts/notes-on-meta-learning/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/%E8%AF%BE%E9%A2%98%E7%A0%94%E7%A9%B6/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/%E9%A2%86%E5%9F%9F%E6%B3%9B%E5%8C%96/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/notes-on-recent-dg-tech/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/%E9%B2%81%E6%A3%92%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2022-04-07T11:29:02+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/about/</loc>
+  </url><url>
+    <loc>https://example.com/archives/</loc>
+  </url><url>
+    <loc>https://example.com/articles/</loc>
+  </url><url>
+    <loc>https://example.com/categories/</loc>
+  </url><url>
+    <loc>https://example.com/search/</loc>
+  </url><url>
+    <loc>https://example.com/tags/</loc>
   </url>
 </urlset>

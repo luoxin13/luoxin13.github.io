@@ -8,15 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Apr 2022 11:29:02 +0800</lastBuildDate><atom:link href="https://luoxin13.github.io/categories/%E8%AF%BE%E9%A2%98%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>元学习</title>
+      <title>MAML 及其优化改进</title>
       <link>https://luoxin13.github.io/posts/notes-on-meta-learning/</link>
       <pubDate>Thu, 07 Apr 2022 11:29:02 +0800</pubDate>
       
       <guid>https://luoxin13.github.io/posts/notes-on-meta-learning/</guid>
-      <description>什么是元学习？  进入智能化时代，人工智能的终极目标也正是让机器拥有人的智能。在人类拥有的众多能力中，最重要的能力当属学习能力，正是学习能力让人类能够不断掌握新的知识和技能，支持生命活动。因此，让机器学会学习是实现人工智能的主要目标，在机器学习中出现的元学习概念正试图实现这一目标。元学习由不同层次的学习抽象而成，使得目标机器学习系统能够通过学习自己的主要组件（例如优化器、损失函数、初始化方式、模型架构等）对自己的学习能力进行改进，故而元学习也被称为&amp;quot;学会如何学习 (learning to learn)&amp;quot;。
+      <description>1. 什么是元学习？  进入智能化时代，人工智能的终极目标也正是让机器拥有人的智能。在人类拥有的众多能力中，最重要的能力当属学习能力，正是学习能力让人类能够不断掌握新的知识和技能，支持生命活动。因此，让机器学会学习是实现人工智能的主要目标，在机器学习中出现的元学习概念正试图实现这一目标。元学习由不同层次的学习抽象而成，使得目标机器学习系统能够通过学习自己的主要组件（例如优化器、损失函数、初始化方式、模型架构等）对自己的学习能力进行改进，故而元学习也被称为&amp;quot;学会如何学习 (learning to learn)&amp;quot;。
 元学习通常将学习过程抽象为两个或更多层次：在最内层，模型学习任务相关的知识（例如在新的数据集上对模型进行精调）；在最外层，模型则需要学习&amp;quot;跨任务&amp;quot;知识（例如通过学习在不同任务之间进行迁移）。若最内层的组件存在可学习参数，则最外层优化时可以通过对这些组件进行&amp;quot;元学习&amp;quot;，进而能够对这些最内层的组件进行自动化学习。
-   模型无关的元学习 MAML, Model-Agnostic Meta-Learning  MAML 是一个经典的元学习框架，模型学习神经网络的参数 $\theta$（初始化为 $\theta=\theta_0$）。针对特定任务的支持集（Support Set）$\mathcal{S}={x_S,y_S}$，元学习先利用较少次数（$N=1\ldots 5$）的标准SGD算法对模型进行优化，然后通过二次学习得到对任务的目标集（Target Set）$\mathcal{T}={x_T,y_T}$ 泛化性能较好的模型参数。
-具体来说，在元学习任务中，给定一个任务，任务由支持集和目标集两个集合组成，其中的支持集由若干批量的输入-输出对（${x_S,y_S}$）组成，目标集则是一个小数量的验证集合，同样由输入-输出对（${x_T,y_T}$）组成。任务开始时，元学习得到初始化的模型参数 $\theta_0=\theta$。然后，开始进行内层循环的优化（inner loop optimization）：从第一个步骤开始，在每个步骤 $i$， 神经网络 $f$ 的参数设置为 $\theta_{i-1}$，接受此时的支持集作为输入，输出当前的预测结果 $f(x_s;\theta_{i-1})$，将该预测结果与支持集的标签一起，由定义的损失函数 $L$， 计算得到支持集的损失 $L_{i-1}^S$；此时，可用当前的损失对应的梯度，由 SGD 算法更新模型参数，得到当前步骤的模型参数 $\theta_{i}=\theta_{i-1}-\alpha$</description>
+   2. 元学习工作流程  以 MAML, Model-Agnostic Meta-Learning 为例，MAML 是一个经典的元学习框架，模型学习神经网络的参数 $\theta$（初始化为 $\theta=\theta_0$）。针对特定任务的支持集（Support Set）$\mathcal{S}=\{x_S,y_S\}$，元学习先利用较少次数（$N=1\ldots 5$）的标准SGD算法对模型进行优化，然后通过二次学习得到对任务的目标集（Target Set）$\mathcal{T}=\{x_T,y_T\}$ 泛化性能较好的模型参数。
+具体来说，在元学习任务中，给定一个任务，任务由支持集和目标集两个集合组成，其中的支持集由若干批量的输入/输出对（${x_S,y_S}$）组成，目标集则是一个小数量的验证集合，同样由输入/输出对（${x_T,y_T}$）组成，元学习的执行过程如下：
+ 初始化模型参数 $\theta_0=\theta$。 开始进行内层循环的优化（inner loop optimization）  从第一个步骤开始，在每个步骤 $i$， 神经网络 $f$ 的参数设置为 $\theta_{i-1}$ 输入样本，得到支持集预测结果 $f(x_s;\theta_{i-1})$ 根据支持集标签 $y_S$，由损失函数 $L$ 计算任务的支持集损失 $L_{i-1}^S$ 由 SGD 更新当前步骤的模型参数 $\theta_{i}=\theta_{i-1}-\alpha\nabla_{\theta_{i-1}}L_{i-1}^S$ 重复上述内层循环 $N$ 次，直到得到模型参数 $\theta_N$   由内层优化更新后的模型参数 $\theta_N$ 得到目标集预测结果 $f(x_T,\theta_N)$ 根据目标集标签 $y_T$，由损失函数 $L$ 计算任务的目标集损失 $L_N^T$ 计算目标集损失对 $\theta=\theta_0$ 的梯度 $\nabla_{\theta_{0}}L_{N}^T$  在上述更新过程中，最后对目标梯度的计算包括了内层循环的梯度计算和更新，如此学习得到的初始化参数对特定任务有更好的泛化性，即：通过优化过程本身得到的梯度进行反向传播，可以得到更精确、信息更丰富的梯度，使模型学习更高效。</description>
     </item>
     
   </channel>

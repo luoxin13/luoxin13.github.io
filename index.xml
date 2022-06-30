@@ -9,15 +9,23 @@
       <link>https://luoxin13.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jun 2022 10:09:48 +0800</lastBuildDate><atom:link href="https://luoxin13.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 20:00:00 +0800</lastBuildDate><atom:link href="https://luoxin13.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First</title>
-      <link>https://luoxin13.github.io/posts/first/</link>
-      <pubDate>Fri, 24 Jun 2022 10:09:48 +0800</pubDate>
+      <title>RUNX 使用教程</title>
+      <link>https://luoxin13.github.io/posts/userunx/</link>
+      <pubDate>Thu, 30 Jun 2022 20:00:00 +0800</pubDate>
       
-      <guid>https://luoxin13.github.io/posts/first/</guid>
-      <description>Test Page $$\sigma$$
-1 2 3  public V put(K key, V value) { return putVal(hash(key), key, value, false, true); }   </description>
+      <guid>https://luoxin13.github.io/posts/userunx/</guid>
+      <description>0. 简介 RUNX 是 NVIDIA 开发的一款实验管理工具，旨在自动化执行一系列命令行任务，主要功能包括：
+ 超参数调优/消融实验分析：以不同参数运行实验代码，再进行性能比较 日志记录：管理过程中的日志，支持文本、TensorBoard等 模型检查点：保存管理 checkpoints 实验总结：对运行不同参数得到的结果生成列表总结 代码备份：不同参数运行时将代码备份到各自文件夹，方便 debugging  1. 主要组件   runx.runx
+该组件对实验中的超参数进行处理，根据不同的超参数组合，生成一系列运行命令，对每个命令建立独立的运行文件夹，备份代码至相关文件夹，并将当前运行环境配置、运行超参数等以 yaml 文件形式写入相关文件夹
+  runx.logx
+该组件记录和管理实验过程中的日志，主要包括 metrics、messages、checkpoints 等部分，可替代日常使用的 logging、torch.save、SummaryWriter、print 等日志和模型存放方式
+  runx.sumx
+该组件对不同运行配置得到的结果进行分析整理，根据预先定义的指标对模型进行排序，便于分析/选择最优模型
+  2. 安装配置 通过 pip 安装：
+1 2 3  git clone https://github.com/NVIDIA/runx cd runx python setup.py install --user   通过源码安装：
+1  git clone   3. 基本使用教程 3.0. 基本假设  假定代码运行时有 param1 和 param2 两个参数，运行命令为：  1  python main.</description>
     </item>
     
     

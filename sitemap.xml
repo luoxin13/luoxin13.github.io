@@ -2,21 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://luoxin13.github.io/categories/</loc>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
+  </url><url>
     <loc>https://luoxin13.github.io/</loc>
-    <lastmod>2022-06-30T20:00:00+08:00</lastmod>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/posts/paper-not-2022-08-15-01/</loc>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
   </url><url>
     <loc>https://luoxin13.github.io/posts/</loc>
-    <lastmod>2022-06-30T20:00:00+08:00</lastmod>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/tags/</loc>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/categories/%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-08-15T15:07:47+08:00</lastmod>
   </url><url>
     <loc>https://luoxin13.github.io/posts/userunx/</loc>
     <lastmod>2022-06-30T20:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://luoxin13.github.io/tags/%E5%AE%9E%E9%AA%8C%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-06-30T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/categories/%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2022-06-30T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2022-06-30T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://luoxin13.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2022-06-30T20:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://luoxin13.github.io/archives/</loc>
   </url><url>
-    <loc>https://luoxin13.github.io/categories/</loc>
-  </url><url>
     <loc>https://luoxin13.github.io/search/</loc>
-  </url><url>
-    <loc>https://luoxin13.github.io/tags/</loc>
   </url>
 </urlset>
